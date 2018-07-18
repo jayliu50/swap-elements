@@ -1,0 +1,32 @@
+{
+  "name": "Swap Elements",
+  "description": "Sketch App plugin to swap positions of two elements. Originally written by interacthings",
+  "author": "interacthings",
+  "authorEmail" : "hello@interacthings.com",
+  "homepage": "http://github.com/jayliu50/swap-elements",
+  "version": 1.0,
+  "identifier": "com.interacthings.sketch.swap-elements",
+  "commands": [
+    {
+      "name": "Top-Left",
+      "identifier": "topleft",
+      "shortcut": "shift ctrl command l",
+      "script": "script.cocoascript",
+      "handler": "swapElementsTopLeft"
+    },
+    {
+      "name": "Center",
+      "identifier": "midpoint",
+      "shortcut": "shift ctrl command c",
+      "script": "script.cocoascript",
+      "handler": "swapElementsMidPoint"
+    }
+  ],
+  "menu": {
+    "title": "Swap Elements",
+    "items": [
+      "midpoint",
+      "topleft"
+    ]
+  }
+}
